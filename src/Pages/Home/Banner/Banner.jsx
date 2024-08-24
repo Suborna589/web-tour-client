@@ -5,8 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Banner = () => {
     return (
         <Carousel>
-  <div  className="w-[1350px] h-[620px] ml-1 mr-1 bg-[url('https://i.ibb.co/bmctX6H/tour-a.jpg')] bg-cover rounded-xl  justify-center">
-    <div className='item-center text-white h-full text-left bg-slate-600 bg-opacity-75'>  
+  <div  className="w-[1360px] mx-auto h-[620px] ml-1 mr-1 bg-[url('https://i.ibb.co/bmctX6H/tour-a.jpg')] bg-cover rounded-xl  justify-center">
+    <div className='item-center text-white h-full text-left bg-black bg-opacity-75'>  
         
         <h1 className='pt-[180px] w-[700px]  text-6xl  ml-52 font-bold '>
         Discover Most Beautiful Enjoyable Palace
@@ -26,7 +26,7 @@ const Banner = () => {
         </div> 
 
         <div  className="w-[1350px] h-[620px]  ml-1 mr-1 bg-[url('https://i.ibb.co/DY9Cbn5/tour-c.jpg')] bg-cover rounded-xl  justify-center">
-      <div className='item-center text-white text-left h-full bg-slate-600 bg-opacity-75'>  
+      <div className='item-center text-white text-left h-full bg-black bg-opacity-75'>  
         
         <h1 className='pt-[180px] w-[700px]  text-6xl  ml-52 font-bold '>
         Discover Most Beautiful Enjoyable Palace
@@ -48,7 +48,7 @@ const Banner = () => {
       </div> 
 
       <div  className="w-[1350px] h-[620px]  ml-1 mr-1 bg-[url('https://i.ibb.co/zZMXksp/tour-d.jpg')] bg-cover rounded-xl  justify-center">
-      <div className='item-center text-white text-left h-full bg-slate-600 bg-opacity-75 '>  
+      <div className='item-center text-white text-left h-full bg-black bg-opacity-75 '>  
         
         <h1 className='pt-[180px] w-[700px]  text-6xl  ml-52 font-bold '>
         Discover Most Beautiful Enjoyable Palace
@@ -68,7 +68,7 @@ const Banner = () => {
         </div> 
         </div>  
         <div  className="w-[1350px] h-[620px] ml-1 mr-1  bg-[url('https://i.ibb.co/tztdTcN/tour-b.jpg')] bg-cover rounded-xl  justify-center">
-      <div className='item-center text-white text-left h-full  bg-slate-600 bg-opacity-75'>  
+      <div className='item-center text-white text-left h-full bg-black bg-opacity-75'>  
         
         <h1 className='pt-[180px] w-[700px]  text-6xl  ml-52 font-bold '>
         Discover Most Beautiful Enjoyable Palace

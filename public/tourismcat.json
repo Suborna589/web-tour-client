@@ -1,0 +1,432 @@
+
+
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+      "tourist_spot_name": "Sunny Beach",
+      "country_Name": "USA",
+      "location": "Miami, FL",
+      "description": "A beautiful sandy beach with clear waters and plenty of sunshine. Perfect for swimming and sunbathing.",
+      "average_cost": "$0",
+      "seasonality": "Summer",
+      "travel_time": "2-3 days",
+      "totalVisitorsPerYear": 15000,
+      "category": "beaches"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+      "tourist_spot_name": "Mountain Peak Trail",
+      "country_Name": "USA",
+      "location": "Denver, CO",
+      "description": "A challenging hike leading to a stunning mountain peak with panoramic views. Ideal for adventure seekers.",
+      "average_cost": "$25",
+      "seasonality": "Spring, Summer",
+      "travel_time": "3-4 days",
+      "totalVisitorsPerYear": 8000,
+      "category": "mountains"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+      "tourist_spot_name": "Ancient Ruins",
+      "country_Name": "Greece",
+      "location": "Athens",
+      "description": "Explore the ancient ruins of one of the world’s most famous historical sites, rich in history and culture.",
+      "average_cost": "$30",
+      "seasonality": "Spring, Autumn",
+      "travel_time": "5 days",
+      "totalVisitorsPerYear": 20000,
+      "category": "historical"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+      "tourist_spot_name": "Serengeti Safari",
+      "country_Name": "Tanzania",
+      "location": "Serengeti National Park",
+      "description": "Experience an unforgettable wildlife safari in the Serengeti, home to the Great Migration and diverse wildlife.",
+      "average_cost": "$1500",
+      "seasonality": "Winter, Summer",
+      "travel_time": "7 days",
+      "totalVisitorsPerYear": 25000,
+      "category": "museums"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+      "tourist_spot_name": "Luxury Spa Retreat",
+      "country_Name": "Japan",
+      "location": "Kyoto",
+      "description": "Relax and rejuvenate at a luxury spa resort with traditional Japanese therapies and serene surroundings.",
+      "average_cost": "$200 per night",
+      "seasonality": "All year",
+      "travel_time": "4 days",
+      "totalVisitorsPerYear": 12000,
+      "category": "parks"
+    },
+
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Bondi Beach",
+        "country_Name": "Australia",
+        "location": "Sydney",
+        "description": "One of Australia's most iconic beaches, known for its golden sands and surfing waves.",
+        "average_cost": "$0",
+        "seasonality": "Summer",
+        "travel_time": "2-3 days",
+        "totalVisitorsPerYear": 25000,
+        "category": "beaches"
+      },
+      {
+        "id": 7,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Copacabana Beach",
+        "country_Name": "Brazil",
+        "location": "Rio de Janeiro",
+        "description": "A world-famous beach with vibrant nightlife and a beautiful boardwalk.",
+        "average_cost": "$0",
+        "seasonality": "Summer",
+        "travel_time": "3-4 days",
+        "totalVisitorsPerYear": 30000,
+        "category": "beaches"
+      },
+      {
+        "id": 8,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Whitehaven Beach",
+        "country_Name": "Australia",
+        "location": "Whitsunday Island",
+        "description": "Known for its white silica sand and crystal-clear waters, a true paradise.",
+        "average_cost": "$100",
+        "seasonality": "Spring, Summer",
+        "travel_time": "2-3 days",
+        "totalVisitorsPerYear": 12000,
+        "category": "beaches"
+      },
+      {
+        "id": 9,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Navagio Beach",
+        "country_Name": "Greece",
+        "location": "Zakynthos",
+        "description": "Also known as Shipwreck Beach, famous for its clear blue waters and stunning cliffs.",
+        "average_cost": "$50",
+        "seasonality": "Summer",
+        "travel_time": "1-2 days",
+        "totalVisitorsPerYear": 15000,
+        "category": "beaches"
+      },
+      {
+        "id": 10,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Palm Beach",
+        "country_Name": "Maldives",
+        "location": "Male Atoll",
+        "description": "A luxury destination with pristine beaches, perfect for honeymooners and luxury travelers.",
+        "average_cost": "$500",
+        "seasonality": "All year",
+        "travel_time": "7 days",
+        "totalVisitorsPerYear": 8000,
+        "category": "beaches"
+      },
+      {
+        "id": 11,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Maya Bay",
+        "country_Name": "Thailand",
+        "location": "Koh Phi Phi Leh",
+        "description": "A stunning bay surrounded by cliffs, made famous by the movie 'The Beach'.",
+        "average_cost": "$50",
+        "seasonality": "Winter, Spring",
+        "travel_time": "1-2 days",
+        "totalVisitorsPerYear": 20000,
+        "category": "beaches"
+      },
+      {
+        "id": 12,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Boracay Beach",
+        "country_Name": "Philippines",
+        "location": "Boracay Island",
+        "description": "Famous for its powdery white sand and vibrant nightlife, a popular destination for beach lovers.",
+        "average_cost": "$100",
+        "seasonality": "Summer",
+        "travel_time": "3-4 days",
+        "totalVisitorsPerYear": 40000,
+        "category": "beaches"
+    },
+    {
+      "id": 13,
+      "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+      "tourist_spot_name": "Himalayas",
+      "country_Name": "Nepal",
+      "location": "Various Locations",
+      "description": "The world's highest mountain range, offering trekking, mountaineering, and spiritual retreats.",
+      "average_cost": "$3000",
+      "seasonality": "Spring, Autumn",
+      "travel_time": "15-30 days",
+      "totalVisitorsPerYear": 20000,
+      "category": "mountains"
+    },
+    {
+      "id": 14,
+      "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+      "tourist_spot_name": "Blue Ridge Mountains",
+      "country_Name": "USA",
+      "location": "Eastern United States",
+      "description": "A picturesque range in the Appalachian Mountains, known for its scenic drives and hiking trails.",
+      "average_cost": "$500",
+      "seasonality": "Spring, Autumn",
+      "travel_time": "3-5 days",
+      "totalVisitorsPerYear": 35000,
+      "category": "mountains"
+    },
+    {
+      "id": 15,
+      "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+      "tourist_spot_name": "Swiss Alps",
+      "country_Name": "Switzerland",
+      "location": "Various Locations",
+      "description": "One of the most famous mountain ranges in Europe, offering skiing, hiking, and breathtaking views.",
+      "average_cost": "$2000",
+      "seasonality": "Winter, Summer",
+      "travel_time": "7-14 days",
+      "totalVisitorsPerYear": 50000,
+      "category": "mountains"
+    },
+    {
+      "id": 16,
+      "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+      "tourist_spot_name": "Scottish Highlands",
+      "country_Name": "Scotland",
+      "location": "Northern Scotland",
+      "description": "A rugged and scenic region known for its mountains, lakes, and rich history.",
+      "average_cost": "$800",
+      "seasonality": "Summer, Autumn",
+      "travel_time": "5-7 days",
+      "totalVisitorsPerYear": 15000,
+      "category": "mountains"
+    },
+    {
+        "id": 17,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Himalayas",
+        "country_Name": "Nepal",
+        "location": "Various Locations",
+        "description": "The world's highest mountain range, offering trekking, mountaineering, and spiritual retreats.",
+        "average_cost": "$3000",
+        "seasonality": "Spring, Autumn",
+        "travel_time": "15-30 days",
+        "totalVisitorsPerYear": 20000,
+        "category": "historical"
+      },
+      {
+        "id": 18,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Blue Ridge Mountains",
+        "country_Name": "USA",
+        "location": "Eastern United States",
+        "description": "A picturesque range in the Appalachian Mountains, known for its scenic drives and hiking trails.",
+        "average_cost": "$500",
+        "seasonality": "Spring, Autumn",
+        "travel_time": "3-5 days",
+        "totalVisitorsPerYear": 35000,
+        "category": "historical"
+      },
+      {
+        "id": 19,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Swiss Alps",
+        "country_Name": "Switzerland",
+        "location": "Various Locations",
+        "description": "One of the most famous mountain ranges in Europe, offering skiing, hiking, and breathtaking views.",
+        "average_cost": "$2000",
+        "seasonality": "Winter, Summer",
+        "travel_time": "7-14 days",
+        "totalVisitorsPerYear": 50000,
+        "category": "historical"
+      },
+      {
+        "id": 20,
+        "image": "https://i.ibb.co/v3QD2Qv/historiy-1.jpg",
+        "tourist_spot_name": "Scottish Highlands",
+        "country_Name": "Scotland",
+        "location": "Northern Scotland",
+        "description": "A rugged and scenic region known for its mountains, lakes, and rich history.",
+        "average_cost": "$800",
+        "seasonality": "Summer, Autumn",
+        "travel_time": "5-7 days",
+        "totalVisitorsPerYear": 15000,
+        "category": "historical"
+      },
+      {
+        "id": 21,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Pocono Mountains",
+        "country_Name": "USA",
+        "location": "Pennsylvania",
+        "description": "A popular destination for outdoor activities, including skiing, hiking, and water sports.",
+        "average_cost": "$600",
+        "seasonality": "All year",
+        "travel_time": "3-5 days",
+        "totalVisitorsPerYear": 20000,
+        "category": "historical"
+      },
+
+      {
+        "id": 22,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Great Smoky Mountains",
+        "country_Name": "USA",
+        "location": "Tennessee and North Carolina",
+        "description": "A popular national park known for its diverse plant and animal life and scenic beauty.",
+        "average_cost": "$300",
+        "seasonality": "All year",
+        "travel_time": "3-5 days",
+        "totalVisitorsPerYear": 11000000,
+        "category": "museums"
+      },
+      {
+        "id": 23,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Drakensberg Mountains",
+        "country_Name": "South Africa",
+        "location": "KwaZulu-Natal",
+        "description": "A dramatic mountain range offering stunning landscapes, hiking, and cultural heritage.",
+        "average_cost": "$800",
+        "seasonality": "All year",
+        "travel_time": "5-7 days",
+        "totalVisitorsPerYear": 12000,
+        "category": "museums"
+      },
+      {
+        "id": 24,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "Ben Nevis",
+        "country_Name": "Scotland",
+        "location": "Fort William",
+        "description": "The highest mountain in the British Isles, popular for climbing and hiking.",
+        "average_cost": "$400",
+        "seasonality": "Summer, Autumn",
+        "travel_time": "2-3 days",
+        "totalVisitorsPerYear": 125000,
+        "category": "museums"
+      },
+      {
+        "id": 25,
+        "image": "https://i.ibb.co/rwsZtm2/museums.jpg",
+        "tourist_spot_name": "Torres del Paine",
+        "country_Name": "Chile",
+        "location": "Patagonia",
+        "description": "A national park known for its dramatic landscapes, including mountains, glaciers, and lakes.",
+        "average_cost": "$1200",
+        "seasonality": "Summer, Autumn",
+        "travel_time": "7-10 days",
+        "totalVisitorsPerYear": 25000,
+        "category": "museums"
+      },
+      {
+        "id": 26,
+        "image": "https://i.ibb.co/2FWmk4x/spot-7.webp",
+        "tourist_spot_name": "The Louvre",
+        "country_Name": "France",
+        "location": "Paris",
+        "description": "The world's largest art museum and a historic monument in Paris, France.",
+        "average_cost": "$500",
+        "seasonality": "All year",
+        "travel_time": "1-2 days",
+        "totalVisitorsPerYear": 9600000,
+        "category": "museums"
+      },
+
+      {
+        "id": 27,
+        "image": "https://i.ibb.co/gS5ktxF/parks.jpg",
+        "tourist_spot_name": "Yellowstone National Park",
+        "country_Name": "USA",
+        "location": "Wyoming, Montana, and Idaho",
+        "description": "The first national park in the world, known for its wildlife and geothermal features.",
+        "average_cost": "$1000",
+        "seasonality": "Summer, Autumn",
+        "travel_time": "5-7 days",
+        "totalVisitorsPerYear": 4000000,
+        "category": "parks"
+      },
+      {
+        "id": 28,
+        "image": "https://i.ibb.co/gS5ktxF/parks.jpg",
+        "tourist_spot_name": "Serengeti National Park",
+        "country_Name": "Tanzania",
+        "location": "Mara and Simiyu",
+        "description": "Famous for its annual migration of over 1.5 million white-bearded wildebeest and 250,000 zebra.",
+        "average_cost": "$3000",
+        "seasonality": "Spring, Autumn",
+        "travel_time": "7-10 days",
+        "totalVisitorsPerYear": 350000,
+        "category": "parks"
+      },
+      {
+        "id": 29,
+        "image": "https://i.ibb.co/gS5ktxF/parks.jpg",
+        "tourist_spot_name": "Kruger National Park",
+        "country_Name": "South Africa",
+        "location": "Limpopo and Mpumalanga",
+        "description": "One of Africa's largest game reserves, known for the Big Five: lions, leopards, rhinos, elephants, and buffalo.",
+        "average_cost": "$2500",
+        "seasonality": "Winter, Spring",
+        "travel_time": "5-7 days",
+        "totalVisitorsPerYear": 1500000,
+        "category": "parks"
+      },
+      {
+        "id": 30,
+        "image": "https://i.ibb.co/gS5ktxF/parks.jpg",
+        "tourist_spot_name": "Banff National Park",
+        "country_Name": "Canada",
+        "location": "Alberta",
+        "description": "Canada's oldest national park, located in the Rocky Mountains, known for its stunning lakes and glaciers.",
+        "average_cost": "$1200",
+        "seasonality": "Summer, Winter",
+        "travel_time": "7-10 days",
+        "totalVisitorsPerYear": 4000000,
+        "category": "parks"
+      },
+      {
+        "id": 31,
+        "image": "https://i.ibb.co/gS5ktxF/parks.jpg",
+        "tourist_spot_name": "Fiordland National Park",
+        "country_Name": "New Zealand",
+        "location": "South Island",
+        "description": "A stunning natural area known for its fiords, particularly Milford Sound, and diverse wildlife.",
+        "average_cost": "$2000",
+        "seasonality": "Summer, Autumn",
+        "travel_time": "7-10 days",
+        "totalVisitorsPerYear": 500000,
+        "category": "parks"
+      }
+
+  
+  ]
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
