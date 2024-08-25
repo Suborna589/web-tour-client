@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate} from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
+import SocialLogin from '../../Components/SocialLogin/SocialLogin';
 
 
 const Login = () => { 
@@ -110,18 +111,19 @@ const Login = () => {
             <span className="label-text">Password</span>
           </label>
           <input type="password" name='password' placeholder="password" className="input input-bordered" required />
-          <label className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-          </label>
+         
         </div>
         <div className="form-control mt-6">
 
           <input type="submit"   className="btn btn-primary"   value='Login'/>
         </div>
       </form> 
-      <p><small>New Here?<Link to='/signUp'>Create an account </Link></small></p>
+      <p className='px-8'><small>New Here? Create have an account<Link to='/signUp' className=' text-blue-500 font-bold'>Sign Up </Link></small></p>
+
+      <SocialLogin></SocialLogin>
     </div>
   </div>
+  
 </div>
     );
 };

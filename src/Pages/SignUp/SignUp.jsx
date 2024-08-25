@@ -3,9 +3,13 @@ import { Helmet } from 'react-helmet-async';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../Provider/AuthProvider';
 import Swal from 'sweetalert2';
-import {useLocation, useNavigate } from 'react-router-dom';
+import {Link, useLocation, useNavigate } from 'react-router-dom';
+import useAxiosPublic from '../../Components/SectionTitle/hooks/useAxiosPublic';
+import SocialLogin from '../../Components/SocialLogin/SocialLogin';
 
 const SignUp = () => { 
+
+  const axiosPublic=useAxiosPublic();
   const {createUser,updateUserProfile} =useContext(AuthContext);
 const navigate=useNavigate();
 
@@ -38,25 +42,40 @@ const locations=useLocation();
             console.log(loggedUser);
             updateUserProfile(data.name,data.photo) 
             .then(() => {
+              const userInfo={
+                name: data.name,
+                email:data.email
+
+              }
+
               
-              console.log('user profile info updated')
-              reset();
-              window.location.reload() 
-            Swal.fire({
-             position: "top-end",
-             icon: "success",
-             title: "User Created Successfully",
-             showConfirmButton: false,
-             timer: 1500
-           });
-          
+              // console.log('user profile info updated')
+              axiosPublic.post('/users',userInfo)
+              .then(res=>{
+                if(res.data.insertedId){
+                
+                  reset();
+                  window.location.reload() 
+                  Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "User Created Successfully",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+
+                }
+              }).catch((error) => {
+                console.log(error)
+               });
+               
+             navigate(from, { replace: true })
+           })
+
+              })
            
-            }).catch((error) => {
-             console.log(error)
-            });
-            
-          navigate(from, { replace: true })
-        })
+           
+          
     } 
 
 
@@ -113,15 +132,15 @@ const locations=useLocation();
                 {errors.password?.type  ===  'required' && <span className="text-red-600">Password is Required</span>}
                 {errors.password?.type  ===  'minLength' && <span className="text-red-600"> Password  must be  6 characters</span>}
                 {errors.password?.type  ===  'maxLength' && <span className="text-red-600">Password  20 characters</span>}
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                </label>
+                
               </div>
               <div className="form-control mt-6">
               
                 <input type="submit" value='SignUp'  className="btn btn-primary"/>
               </div>
             </form>
+            <p className='px-8'><small>Already have an Account<Link to='/login' className=' text-blue-500 font-bold'>Login</Link></small></p>
+          <SocialLogin></SocialLogin>
           </div>
         </div>
       </div>

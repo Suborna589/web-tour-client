@@ -39,7 +39,7 @@ const Navbar = () => {
 
 
   <li>
-<Link  to='/'>
+<Link  to='/dashboard/cart'>
 
 <button className="flex gap-3">
 <FaShoppingCart className='text-xl text-white'></FaShoppingCart>

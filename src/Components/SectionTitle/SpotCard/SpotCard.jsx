@@ -3,6 +3,7 @@ import useAuth from '../hooks/useAuth';
 import Swal from 'sweetalert2';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useAxiosSecure from '../hooks/useAxiosSecure';
+import userCart from '../hooks/userCart';
 
 
 const SpotCard = ({tourist}) => {
@@ -11,13 +12,14 @@ const SpotCard = ({tourist}) => {
     const navigate=useNavigate();
     const locations =useLocation();
     const axiosSecure=useAxiosSecure();
+    const [,refetch]=userCart()
 
 
 
-    const handleAddToCart= spot=>{
+    const handleAddToCart= ()=>{
      if(user && user.email){
         // send cart tourist to the database  
-        console.log(user.email,spot);
+        // console.log(user.email,spot);
         const cartItourist={
             touristId: _id,
             email:user.email,
@@ -37,6 +39,7 @@ const SpotCard = ({tourist}) => {
                     showConfirmButton: false,
                     timer: 1500
                   });
+                  refetch()
 
             }
         })
@@ -67,14 +70,18 @@ const SpotCard = ({tourist}) => {
             src={image}
              />
         </figure> 
-        <p className=' absolute bg-orange-600 text-white right-0 mr-4 mt-4 px-4'>{average_cost}</p>
+        <p className=' absolute bg-orange-600 text-white right-0 mr-4 mt-4 px-4'>${average_cost}</p>
         <div className="card-body">
           <h2 className="card-title">{tourist_spot_name}</h2>
           <p>{location}</p> 
            <p>{description}</p>
          
-          <div className="card-actions justify-end">
-            <button onClick={()=>handleAddToCart(tourist)} className="btn btn-primary">Add to Cart</button>
+          <div className="card-actions justify-center">
+            {/* <button onClick={handleAddToCart} className="btn btn-primary">Add to Cart</button> */}
+            <button
+                        onClick={handleAddToCart}
+                        className="btn btn-outline bg-slate-200 border-0 border-b-4 border-orange-400 mt-4"
+                    >Add to Cart</button>
           </div>
         </div>
       </div>
