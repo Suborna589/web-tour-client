@@ -1,11 +1,12 @@
-import { FaAd, FaBook, FaCalendar, FaEnvelope, FaHome, FaList, FaSearch, FaShoppingCart, FaUser, FaUsers, FaUtensils } from "react-icons/fa";
+import {  FaBook, FaCalendar, FaEnvelope, FaHome, FaList, FaSearch, FaShoppingCart, FaUser, FaUsers, FaUtensils } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 import userCart from "../Components/SectionTitle/hooks/userCart";
+import useAdmin from "../Components/SectionTitle/hooks/useAdmin";
 
 
 const DashBoard = () => {
     const [cart]=userCart()
-    const isAdmin=true;
+    const [isAdmin]=useAdmin()
     return (
         <div className="flex ">
 
@@ -24,7 +25,7 @@ const DashBoard = () => {
             </li>
 
            <li>
-            <NavLink to='/dashboard/addTourist' className='flex gap-3 text-white  mb-4 '>
+            <NavLink to='/dashboard/addSpot' className='flex gap-3 text-white  mb-4 '>
             <FaUtensils className="text-xl mt-1"></FaUtensils>Add Tourist Spot</NavLink>
             </li>
 

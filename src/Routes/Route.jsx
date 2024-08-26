@@ -11,6 +11,10 @@ import DashBoard from "../Layout/DashBoard";
 import Cart from "../Pages/DashBoard/Cart/Cart";
 import PrivateRoute from "./PrivateRoute";
 import AllUsers from "../Pages/DashBoard/Cart/AllUsers/AllUsers";
+import AddTouristSpot from "../Pages/DashBoard/Cart/AddTouristSpot/AddTouristSpot";
+import AdminRoute from "../Routes/AdminRoute";
+import ManageTouristSpot from "../Pages/DashBoard/Cart/ManageTouristSpot/ManageTouristSpot";
+import UpdateTourstList from "../Pages/DashBoard/Cart/UpdateTouristSpot/UpdateTourstList";
 
 
 
@@ -48,16 +52,40 @@ import AllUsers from "../Pages/DashBoard/Cart/AllUsers/AllUsers";
       path:'dashboard',
       element:<PrivateRoute><DashBoard></DashBoard></PrivateRoute>,
 
+     
       children:[
+        // normal user route
+
         {
           path:'cart',
           element:<Cart></Cart>
         },
 
+
         // admin routes
+
+      {
+        path:'addSpot',
+        element:<AdminRoute><AddTouristSpot></AddTouristSpot></AdminRoute>,
+      },
+
+      {
+        path:'manageTourist',
+        element:<AdminRoute><ManageTouristSpot></ManageTouristSpot></AdminRoute>
+
+      },
+      {
+        path:'updateList/:id',
+        element:<AdminRoute><UpdateTourstList></UpdateTourstList></AdminRoute>,
+        loader:({params})=>fetch(`http://localhost:5000/tourist/${params.id}`)
+
+
+      },
+
+
         {
           path:'users',
-          element:<AllUsers></AllUsers>
+          element:<AdminRoute><AllUsers></AllUsers></AdminRoute>
         }
 
       ]
