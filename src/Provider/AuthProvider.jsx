@@ -4,6 +4,7 @@ import { app } from "../Firebase/firebase.config";
 import useAxiosPublic from "../Components/SectionTitle/hooks/useAxiosPublic";
 import { axiosSecure } from "../Components/SectionTitle/hooks/useAxiosSecure";
 
+
 export const AuthContext=createContext(null) 
 
 const auth = getAuth(app);
@@ -60,6 +61,7 @@ const updateUserProfile=(name,photo)=>{
                if (res.data.token){
 
                 localStorage.setItem("access-token",res.data.token)
+                setLoading(false);
                }
 
             }
@@ -70,9 +72,10 @@ const updateUserProfile=(name,photo)=>{
          }
          else{ 
             localStorage.removeItem('access-token')
+            setLoading(false);
 
          }
-            setLoading(false);
+         
         });
          
      

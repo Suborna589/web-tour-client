@@ -61,13 +61,13 @@ const DashBoard = () => {
             </li>
             
             <li>
-            <NavLink to='/dashboard/reservation' className='flex gap-3 text-white  mb-4 '>
-            <FaCalendar className="text-xl mt-1"></FaCalendar>Reservation</NavLink>
+            <NavLink to='/dashboard/history' className='flex gap-3 text-white  mb-4 '>
+            <FaCalendar className="text-xl mt-1"></FaCalendar>Payment History</NavLink>
             </li>
         
             <li>
-            <NavLink to='/dashboard/bookings' className='flex gap-3 text-white   mb-4'>
-            <FaBook className="text-xl  mt-1"></FaBook>My Booking</NavLink>
+            <NavLink to='/dashboard/paymentHistory' className='flex gap-3 text-white   mb-4'>
+            <FaBook className="text-xl  mt-1"></FaBook>Payment Real History</NavLink>
             </li>
            
            <li>

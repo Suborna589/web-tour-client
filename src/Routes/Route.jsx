@@ -15,6 +15,10 @@ import AddTouristSpot from "../Pages/DashBoard/Cart/AddTouristSpot/AddTouristSpo
 import AdminRoute from "../Routes/AdminRoute";
 import ManageTouristSpot from "../Pages/DashBoard/Cart/ManageTouristSpot/ManageTouristSpot";
 import UpdateTourstList from "../Pages/DashBoard/Cart/UpdateTouristSpot/UpdateTourstList";
+import Payment from "../Pages/DashBoard/Cart/Payment/Payment";
+import PaymentHistory from "../Pages/DashBoard/Cart/Payment/PaymentHistory";
+import UserHome from "../Pages/DashBoard/Cart/UserHome/UserHome";
+import AdminHome from "../Pages/DashBoard/Cart/AdminHome/AdminHome";
 
 
 
@@ -56,13 +60,38 @@ import UpdateTourstList from "../Pages/DashBoard/Cart/UpdateTouristSpot/UpdateTo
       children:[
         // normal user route
 
+        { 
+          path:'userHome',
+          element:<UserHome></UserHome>
+
+        },
+
         {
           path:'cart',
           element:<Cart></Cart>
         },
+        {
 
+          path:'payment',
+          element:<Payment></Payment>
+
+        },
+
+        {
+
+          path:'paymentHistory',
+          element:<PaymentHistory></PaymentHistory>
+
+        },
 
         // admin routes
+
+
+      {
+
+        path:'adminHome',
+        element:<AdminRoute><AdminHome></AdminHome></AdminRoute>
+      },
 
       {
         path:'addSpot',

@@ -2,6 +2,7 @@ import { FaTrashAlt } from "react-icons/fa";
 import userCart from "../../../Components/SectionTitle/hooks/userCart";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../Components/SectionTitle/hooks/useAxiosSecure";
+import { Link } from "react-router-dom";
 
 
 const Cart = () => {
@@ -9,7 +10,7 @@ const Cart = () => {
     const axiosSecure=useAxiosSecure();
 
 
-        const totalPrice = cart.reduce( (  total , tourist) =>total + Number(tourist.average_cost),0);
+        const totalPrice = cart.reduce( (  total , list) =>total + Number(list.average_cost),0);
     
 const handleDelete= id=>{
     Swal.fire({
@@ -52,7 +53,12 @@ const handleDelete= id=>{
 <div className="flex justify-evenly mb-8">
 <h2 className="text-4xl">Tourist:{cart.length}</h2>
 <h2 className="text-4xl">Total AvarestCost:{totalPrice}</h2>
-<button  className="btn btn-primary">Pay</button>
+
+{cart.length ? <Link to="/dashboard/payment">
+                    <button className="btn btn-primary">Pay</button>
+                </Link>:
+                <button disabled className="btn btn-primary">Pay</button>
+                }
 </div>
 
 <div className="overflow-x-auto ">
@@ -71,7 +77,7 @@ const handleDelete= id=>{
     </thead>
     <tbody>
       {
-        cart.map((tourist,index)=>  <tr key={tourist._id}>
+        cart.map((list,index)=>  <tr key={list._id}>
             <th>
              {index+1}
             </th>
@@ -80,7 +86,7 @@ const handleDelete= id=>{
                 <div className="avatar">
                   <div className="mask mask-squircle h-12 w-12">
                     <img
-                      src={tourist.image}
+                      src={list.image}
                       alt="Avatar Tailwind CSS Component" />
                   </div>
                 </div>
@@ -88,13 +94,13 @@ const handleDelete= id=>{
               </div>
             </td>
             <td>
-             {tourist.tourist_spot_name}
+             {list.tourist_spot_name}
             </td>
             <td>
-                ${tourist.average_cost}
+                ${list.average_cost}
             </td>
             <th>
-              <button onClick={()=> handleDelete(tourist._id)} className="btn btn-ghost btn-lg"><FaTrashAlt className="text-red-500"></FaTrashAlt></button>
+              <button onClick={()=> handleDelete(list._id)} className="btn btn-ghost btn-lg"><FaTrashAlt className="text-red-500"></FaTrashAlt></button>
             </th>
           </tr>)
       }
